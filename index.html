@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantanu Chahar | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">S<span class="logo-slash">/</span><span class="logo-bracket">></span></div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-text">INITIALIZING SYSTEM...</div>
+        </div>
+    </div>
+
+    <div id="scroll-progress"></div>
+    <div class="background-container">
+        <div class="liquid-shape shape-1"></div>
+        <div class="liquid-shape shape-2"></div>
+        <div class="liquid-shape shape-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">S<span class="logo-slash">/</span><span class="logo-bracket">></span></a>
+            <ul class="nav-links">
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#about">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://drive.google.com/uc?export=download&id=1Js9x1UBXKiSHMVMjsyqgj2iMkPCbLIwc" class="nav-btn"
+                target="_blank">
+                Resume <i class="fas fa-download"></i>
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="status-text">SYSTEM ONLINE</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="highlight">Shantanu Chahar</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I'm an <span class="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="hero-description">
+                    I build exceptional and accessible data-driven solutions. Passionate about transforming raw data
+                    into elegant, predictive, and scalable intelligent systems..
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/curiouschahar" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/shantanuchahar" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="mailto:shantanuchahar01@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-placeholder">
+                    <img src="profile.jpg" alt="Shantanu Chahar">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about-me" class="section">
+            <div class="section-header">
+                <h2>About <span class="highlight">Me</span></h2>
+            </div>
+            <div class="about-me-grid">
+                <div class="glass-card about-me-text">
+                    <p>I'm a <strong>B.Tech Computer Science undergraduate at LPU</strong>, with a strong foundation in
+                        <strong>machine learning and web development</strong>. I enjoy building real-world projects like
+                        demand prediction systems and interactive applications, and continuously explore new
+                        technologies.
+                    </p>
+                    <p>With solid skills in <strong>Python, C, C++, Java, data analysis, and problem-solving</strong>,
+                        I’m a collaborative learner driven to innovate and grow in the tech field.</p>
+
+                    <div class="tech-stack-icons">
+                        <div class="tech-icon" title="Python"><i class="fab fa-python"></i></div>
+                        <div class="tech-icon" title="C++"><i class="fas fa-code"></i></div>
+                        <div class="tech-icon" title="Java"><i class="fab fa-java"></i></div>
+                        <div class="tech-icon" title="Machine Learning"><i class="fas fa-brain"></i></div>
+                        <div class="tech-icon" title="Web Development"><i class="fas fa-laptop-code"></i></div>
+                    </div>
+                </div>
+
+                <div class="terminal-card glass-card">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">~/developer/profile.json</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-var">profile</span> = {
+    <span class="code-prop">name</span>: <span class="code-string">'Shantanu Chahar'</span>,
+    <span class="code-prop">focus</span>: <span class="code-string">'ML & Web Dev'</span>,
+    <span class="code-prop">status</span>: <span class="code-string">'Student at LPU'</span>,
+    <span class="code-prop">stats</span>: {
+        <span class="code-prop">problemsSolved</span>: <span class="code-num">283</span>,
+        <span class="code-prop">leetcodeStreak</span>: <span class="code-num">29</span>,
+        <span class="code-prop">coffeeConsumed</span>: <span class="code-num">Infinity</span>
+    }
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <div class="section-header">
+                <h2>Technical <span class="highlight">Skills</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-cubes"></i> Frameworks & ML</h3>
+                    <div class="skill-tags">
+                        <span>Matplotlib</span>
+                        <span>Pandas</span>
+                        <span>SciPy</span>
+                        <span>NumPy</span>
+                        <span>PyTorch</span>
+                        <span>TensorFlow</span>
+                        <span>Scikit-Learn</span>
+                        <span>Flask</span>
+                        <span>Streamlit</span>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Anaconda</span>
+                        <span>Jupyter</span>
+                        <span>Google Colab</span>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-header">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Project 1 (Primary) -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="water_pump.png" alt="Water-Pump Demand Predictor">
+                        <div class="project-overlay">
+                            <a href="https://github.com/curiouschahar/Water-Pump-Predictor" target="_blank"
+                                class="overlay-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://water-pump-predictor--shantanuchahar.replit.app" target="_blank"
+                                class="overlay-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Water-Pump Demand Predictor</h3>
+                        <p class="project-date">Feb '24 - May '24</p>
+                        <p class="project-desc">
+                            Built a machine-learning-based demand forecasting system for water pumps using historical
+                            regional/seasonal data. Implemented backend using Python/Flask and regression-based ML
+                            models.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Random Forest</li>
+                            <li>Scikit-Learn</li>
+                            <li>Flask</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="water_leakage.jpg" alt="Water Leakage Detection">
+                        <div class="project-overlay">
+                            <a href="https://github.com/curiouschahar/Water-leakage-detection" target="_blank"
+                                class="overlay-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://water-leakage-detection--shantanuchahar1.replit.app/" target="_blank"
+                                class="overlay-link" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Water Leakage Detection</h3>
+                        <p class="project-date">Aug '24 - Sep '24</p>
+                        <p class="project-desc">
+                            Automated IoT-based system for real-time monitoring and detection of water pipe leakages,
+                            designed to prevent water wastage and structural damage through instant alerts.
+                        </p>
+                        <ul class="project-tech">
+                            <li>IoT</li>
+                            <li>Python</li>
+                            <li>Sensors</li>
+                            <li>Real-time Alerts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <img src="snake_game.png" alt="2-D Snake Game">
+                        <div class="project-overlay">
+                            <a href="https://github.com/curiouschahar/2-D-Snake-Game-With-Movement" target="_blank"
+                                class="overlay-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" class="overlay-link" aria-label="Live Demo"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">2-D Snake Game With Movement</h3>
+                        <p class="project-date">Jun '25 - Jul '25</p>
+                        <p class="project-desc">
+                            Developed an interactive Snake Game featuring smooth movement controls, real-time game
+                            logic,
+                            collision detection, score tracking, and dynamic food generation.
+                        </p>
+                        <ul class="project-tech">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>DSA</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="section-header">
+                <h2>Technical <span class="highlight">Certifications</span></h2>
+            </div>
+            <div class="certs-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="cert_social_media.png" alt="Privacy and Security in Online Social Media">
+                        <div class="cert-overlay">
+                            <div class="overlay-btn" title="View Preview"
+                                onclick="openCertModal('cert_social_media.png', 'Privacy and Security in Online Social Media', 'https://drive.google.com/file/d/1EbFecIPTUFq8t90POPXhkR9NeMvTpXC1/view?usp=drive_link')">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1EbFecIPTUFq8t90POPXhkR9NeMvTpXC1/view?usp=drive_link"
+                                target="_blank" class="overlay-btn main" title="View on Google Drive">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://drive.google.com/uc?export=download&id=1EbFecIPTUFq8t90POPXhkR9NeMvTpXC1"
+                                class="overlay-btn" title="Download PDF">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-org">NPTEL • IIIT HYDERABAD</div>
+                        <h4>Privacy and Security in Online Social Media</h4>
+                        <div class="cert-badge">Verified Credential</div>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="cert_cpp.png" alt="Mastering C and C++ Programming">
+                        <div class="cert-overlay">
+                            <div class="overlay-btn" title="View Preview"
+                                onclick="openCertModal('cert_cpp.png', 'Mastering C and C++ Programming', 'https://drive.google.com/file/d/1UCcK4hl5-YERBX5HUjqhzrcT8Kn-Vd3L/view?usp=drive_link')">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1UCcK4hl5-YERBX5HUjqhzrcT8Kn-Vd3L/view?usp=drive_link"
+                                target="_blank" class="overlay-btn main" title="View on Google Drive">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://drive.google.com/uc?export=download&id=1UCcK4hl5-YERBX5HUjqhzrcT8Kn-Vd3L"
+                                class="overlay-btn" title="Download PDF">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-org">BOARD INFINITY</div>
+                        <h4>Mastering C and C++ Programming</h4>
+                        <div class="cert-badge">Verified Credential</div>
+                    </div>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="cert_webdev.png" alt="Web Development Certification">
+                        <div class="cert-overlay">
+                            <div class="overlay-btn" title="View Preview"
+                                onclick="openCertModal('cert_webdev.png', 'Web Development Certification', 'https://drive.google.com/file/d/1S412FVJDoIJFLIdZX-LaHMY7H6jzozDZ/view?usp=drive_link')">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1S412FVJDoIJFLIdZX-LaHMY7H6jzozDZ/view?usp=drive_link"
+                                target="_blank" class="overlay-btn main" title="View on Google Drive">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://drive.google.com/uc?export=download&id=1S412FVJDoIJFLIdZX-LaHMY7H6jzozDZ"
+                                class="overlay-btn" title="Download PDF">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-org">Rising Tech Pro</div>
+                        <h4>Full-Stack Web Development</h4>
+                        <div class="cert-badge">Verified Credential</div>
+                    </div>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="cert_networking.png" alt="The Bits and Bytes of Computer Networking">
+                        <div class="cert-overlay">
+                            <div class="overlay-btn" title="View Preview"
+                                onclick="openCertModal('cert_networking.png', 'The Bits and Bytes of Computer Networking', 'https://coursera.org/verify/MHA75TLD53GB')">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <a href="https://coursera.org/verify/MHA75TLD53GB" target="_blank" class="overlay-btn main"
+                                title="Verify on Coursera">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://coursera.org/verify/MHA75TLD53GB" target="_blank" class="overlay-btn"
+                                title="View Official Certificate">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-org">GOOGLE • COURSERA</div>
+                        <h4>The Bits and Bytes of Computer Networking</h4>
+                        <div class="cert-badge">Verified Credential</div>
+                    </div>
+                </div>
+
+                <!-- Cert 5 -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="cert_cpp_hands_on.png" alt="Programming in C++ Specialization">
+                        <div class="cert-overlay">
+                            <div class="overlay-btn" title="View Preview"
+                                onclick="openCertModal('cert_cpp_hands_on.png', 'Programming in C++ Specialization', 'https://coursera.org/verify/specialization/FRDQNWRTAYVD')">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <a href="https://coursera.org/verify/specialization/FRDQNWRTAYVD" target="_blank"
+                                class="overlay-btn main" title="Verify on Coursera">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://coursera.org/verify/specialization/FRDQNWRTAYVD" target="_blank"
+                                class="overlay-btn" title="View Official Certificate">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-org">CODIO • COURSERA</div>
+                        <h4>Programming in C++: A Hands-on Introduction</h4>
+                        <div class="cert-badge">Verified Credential</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="section-header">
+                <h2>Key <span class="highlight">Achievements</span></h2>
+            </div>
+            <div class="experience-grid" style="max-width: 800px; margin: 0 auto;">
+                <div class="exp-column">
+                    <div class="timeline">
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-dot"></div>
+                            <h4>Smart Mirror with Deep Learning for Health Evaluation, Skincare, and Virtual Enhancement
+                            </h4>
+                            <p class="timeline-date">May '25 | IEEE | Article No.: 11051879</p>
+                            <p>Developed an AI-powered smart mirror system using deep learning for real-time health
+                                analysis, skincare assessment, and virtual enhancement. Published in Proceedings of the
+                                International Conference on Engineering, Technology & Management (ICETM 2025), IEEE,
+                                2025.</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-dot"></div>
+                            <h4>Republic of Cyber Sentinels Capture The Flag</h4>
+                            <p class="timeline-date">Jan '24</p>
+                            <p>Successfully cleared the first round in a 24-hour national-level Capture The Flag (CTF)
+                                cybersecurity competition, demonstrating advanced skills in problem-solving, ethical
+                                hacking, and real-world cyber defense strategies.</p>
+                        </div>
+                        <div class="timeline-item glass-card">
+                            <div class="timeline-dot"></div>
+                            <h4>Competitive Coding Excellence: HackerRank 5-Star</h4>
+                            <p class="timeline-date">Verified Proficiency</p>
+                            <p>Achieved a 5-star Gold badge in C, C++, and Python by solving over 100+ algorithmic and
+                                technical challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2>Education <span class="highlight"></span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="education-card glass-card">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <div class="edu-details">
+                        <h3>Lovely Professional University</h3>
+                        <p class="edu-degree">Bachelor of Technology - Computer Science and Engineering</p>
+                        <p class="edu-meta">Aug '23 - Present | CGPA: 7.1 | Punjab, India</p>
+                    </div>
+                </div>
+                <div class="education-card glass-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <div class="edu-details">
+                        <h3>Air Force School</h3>
+                        <p class="edu-degree">Intermediate (12th Grade)</p>
+                        <p class="edu-meta">April 2021 - March 2022 | Percentage: 66% | Agra, UP</p>
+                    </div>
+                </div>
+                <div class="education-card glass-card">
+                    <div class="edu-icon"><i class="fas fa-book-reader"></i></div>
+                    <div class="edu-details">
+                        <h3>Air Force School</h3>
+                        <p class="edu-degree">Matriculation (10th Grade)</p>
+                        <p class="edu-meta">April 2019 - March 2020 | Percentage: 87% | Agra, UP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header text-center">
+                <h2>Let's <span class="highlight">Connect</span></h2>
+                <p>I'm currently open for new opportunities</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Left Column: Info Cards -->
+                <div class="contact-sidebar">
+                    <!-- Resumes Card -->
+                    <div class="contact-card glass-card">
+                        <div class="card-header">
+                            <div class="icon-circle accent"><i class="fas fa-file-alt"></i></div>
+                            <h3>Resumes</h3>
+                        </div>
+                        <p class="card-desc">Download my CV to review my technical skillset, projects, and
+                            educational background in detail.</p>
+                        <div class="resume-list">
+                            <a href="https://drive.google.com/file/d/1Js9x1UBXKiSHMVMjsyqgj2iMkPCbLIwc/view?usp=drive_link"
+                                class="resume-item" target="_blank">
+                                <span class="resume-info">
+                                    <i class="fas fa-file-pdf"></i>
+                                    <span>Download Resume</span>
+                                </span>
+                                <i class="fas fa-download download-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Digital Presence Card -->
+                    <div class="contact-card glass-card">
+                        <div class="card-header">
+                            <div class="icon-circle purple"><i class="fas fa-hashtag"></i></div>
+                            <h3>Digital Presence</h3>
+                        </div>
+                        <div class="social-pills">
+                            <a href="https://github.com/curiouschahar" target="_blank" class="social-pill"
+                                title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/shantanuchahar" target="_blank" class="social-pill"
+                                title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:shantanuchahar01@gmail.com" class="social-pill" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Form -->
+                <div class="contact-form-container glass-card">
+                    <div class="form-header">
+                        <h3>Send a direct message <span class="status-dot"></span></h3>
+                        <p>I typically reply within a few hours.</p>
+                    </div>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-user-circle"></i>
+                                    <input type="text" id="name" required placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <div class="input-with-icon">
+                                    <i class="fas fa-at"></i>
+                                    <input type="email" id="email" required placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="6" required
+                                placeholder="What would you like to discuss?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary initialize-btn">
+                            Initialize Contact <i class="fas fa-rocket"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="current-year"></span> Shantanu Chahar.Building responsive and accessible digital
+                experiences</p>
+            <div class="social-links">
+                <a href="https://github.com/curiouschahar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/shantanuchahar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:shantanuchahar01@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Preview Modal -->
+    <div id="cert-modal" class="modal">
+        <div class="modal-content glass-card">
+            <div class="modal-header">
+                <h3 id="modal-title">Certificate Preview</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="Certificate Preview">
+            </div>
+            <div class="modal-footer">
+                <a id="modal-verify" href="#" target="_blank" class="btn primary-btn">
+                    <i class="fas fa-check-circle"></i> Verify Certificate
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
