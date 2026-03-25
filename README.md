@@ -4,7 +4,7 @@ Welcome to my personal digital portfolio website! 🚀
 This project showcases my skills, projects, certifications, and achievements as a Computer Science Engineering student specializing in AI/ML and Web Development.
 
 ## 🔗 Live Preview
-(Add your deployed link here)
+shantanuportfolio01.vercel.app
 
 ---
 
